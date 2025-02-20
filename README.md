@@ -20,7 +20,7 @@ float main() {
     
 }
 */
-
+------------------------------------------
 /*
 int main(){
     int n1;
@@ -50,4 +50,44 @@ int main(){
     
     return 0;
     
+}
+-------------------------------------
+int main() {
+    int A;
+    int B;
+    int result;
+    char simb;
+    
+    printf("Digite um numero:", A);
+    scanf(" %d", &A);
+    printf("Digite o segundo numero: ", B);
+    scanf(" %d", &B);
+    printf("Digite + para somar, - para subtração, D para divisão e M para multiplicação.", simb);
+    scanf(" %c", &simb);
+    
+    do{
+        
+        printf("digite um comando valido!");
+        scanf(" %c", &simb);
+        
+        }while(simb != '+' && simb != '-' && simb != 'D' && simb != 'M');
+        
+        if(simb =='+'){
+            result = A+B;
+            printf("A soma é: %d", result);
+        }else if(simb =='-'){
+            result= A-B;
+            printf("A subtração é: %d", result);
+        }else if(simb =='D'){
+            result= A/B;
+            printf("A divisão é: %d", result);
+        }else if(simb =='M'){
+            result= A*B;
+            printf("A multiplição é: %d", result);
+        }else{
+            printf("Tecla não reconhecida, tente novamente.");
+        }
+        
+    
+    return 0;
 }
